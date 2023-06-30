@@ -6,7 +6,7 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 
 // {type}
-import { SafeListing, SafeReservations, SafeUser } from "@/app/types";
+import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
 
 // { Date-fns}
 import { differenceInCalendarDays, eachDayOfInterval } from 'date-fns';
@@ -30,7 +30,7 @@ const initialDateRange = {
 
 // { interface from [listingsId].page }
 interface ListingClientProps {
-    reservations?: SafeReservations[];
+    reservations?: SafeReservation[];
     listing: SafeListing & {
         user: SafeUser
     };

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'react-hot-toast';
 
 // {type}
-import { SafeReservations, SafeUser } from '../types';
+import { SafeReservation, SafeUser } from '../types';
 
 // { Component }
 import Heading from '../components/Heading';
@@ -16,7 +16,7 @@ import ListingCard from '../components/listings/ListingCard';
 
 // {interface from trip.page}
 interface TripsClientProp {
-    reservations?: SafeReservations[];
+    reservations?: SafeReservation[];
     currentUser?: SafeUser | null;
 }
 
